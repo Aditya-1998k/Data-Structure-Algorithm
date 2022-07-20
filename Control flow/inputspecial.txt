@@ -1,0 +1,57 @@
+1000
+100
+10
+
+
+
+Given first 3 numbers of a geometric progression, predict the next number.
+input: 3 integer
+output: next term in gp
+
+test cases
+tc1: input 2 4 8
+        expected out=16
+tc2: input 16 8 4
+        expected out=2
+tc3: input 11 22 44
+        expected out=88
+
+tc4: input 1000 100 10
+     expected out=1
+
+     ----------------algorithm--------
+     step 1= taking first input
+     step 2= taking 2nd input
+     step 3= taking 3rd input
+     step 4= logic for gp
+                taking variable for common ratio
+                common ratio=2nd input/1st input
+     step 5= next term=3rd term*common ratio
+     step 6=print next term in integer format
+
+      -----------------dry run-----------
+      input 2 4 8
+      expected out=16
+
+line 13: let first_num=parseInt(readLine());
+                =parseInt("2")
+                =2
+                =assign 2 to lhs that is first_num
+        let second_num=parseInt(readLine())
+                        =parseInt("4")
+                        =4 ---->assign to second_num
+line 15: let third_num=parseInt(readLine())
+                        =parseInt("8")
+                        =8----->assign to third_num
+line 16 let cr=second_num/first_num;
+        evaluating the expression
+        cr=4/2;
+        =2 -----> assign 2 to cr
+line 17 let fourth_term=third_num*cr;
+        evaluating the expression
+                =8*2;
+                =16 ---->assign 16 to fourth_term
+line 18 console.log(parseInt(fourth_term));
+        console.log(parseInt(16))
+        console.log(16);
+        output=16
